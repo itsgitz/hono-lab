@@ -9,5 +9,10 @@ export default $config({
       home: "aws",
     };
   },
-  async run() {},
+  async run() {
+    new sst.aws.Function("Hono", {
+      url: true,
+      handler: "src/index.handler",
+    });
+  },
 });
