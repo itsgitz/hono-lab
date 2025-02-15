@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "hono": "^4.7.1",
+    "sst": "3.9.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.147"
+  }
+}
