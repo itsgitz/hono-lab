@@ -1,2 +1,3 @@
-# hono-lab
-Hono deployment lab in different environment!
+# Hono Lab
+
+[Hono](https://hono.dev/) deployment lab in various environment!
