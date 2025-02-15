@@ -10,6 +10,10 @@ declare module "sst" {
       "type": "sst.aws.Function"
       "url": string
     }
+    "HonoApi": {
+      "type": "sst.aws.ApiGatewayV2"
+      "url": string
+    }
   }
 }
 /// <reference path="sst-env.d.ts" />

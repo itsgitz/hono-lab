@@ -10,9 +10,12 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Function("Hono", {
+    const honoHandler = new sst.aws.Function("Hono", {
       url: true,
       handler: "src/index.handler",
     });
+
+    const honoApi = new sst.aws.ApiGatewayV2("HonoApi");
+    honoApi.route("ANY /{proxy+}", honoHandler.arn);
   },
 });
